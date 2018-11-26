@@ -20,8 +20,9 @@ public class Main {
 
 	public static void main(String[] args) throws MetricProcessingException {
 
-		// String input = args[0]
-		loader.loadDataSet("src/main/resources/rdf.nt");
+		String input = args[0];
+		System.out.println("input:"+input);
+		loader.loadDataSet(input);
 		AbstractQualityMetric metric_HumanReadableLicense = new HumanReadableLicense();
 		assessQuality(metric_HumanReadableLicense);
 		AbstractQualityMetric metric_MachineReadableLicense = new MachineReadableLicense();
