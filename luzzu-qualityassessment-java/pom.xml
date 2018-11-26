@@ -11,7 +11,7 @@
 	</parent>
 
 	<properties>
-		<mapdb.version>3.0.5</mapdb.version>
+		<mapdb.version>1.0.8</mapdb.version>
 		<jdk.version>1.8</jdk.version>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.16</log4j.version>
@@ -83,6 +83,30 @@
 			<artifactId>luzzu-assessment</artifactId>
 			<version>${luzzu.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.mapdb</groupId>
+			<artifactId>mapdb</artifactId>
+			<version>${mapdb.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.concurrentlinkedhashmap</groupId>
+			<artifactId>concurrentlinkedhashmap-lru</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math</artifactId>
+			<version>2.2</version>
+		</dependency>
+
 
 	</dependencies>
 

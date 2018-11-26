@@ -31,6 +31,7 @@ public class Loader {
 		// Set the dataset URI into the datasetURI property, so that it's retrieved by
 		// EnvironmentProperties
 		PropertyManager.getInstance().addToEnvironmentVars("datasetURI", fileName);
+		PropertyManager.getInstance().addToEnvironmentVars("dataset-pld", fileName);
 	}
 
 	/**

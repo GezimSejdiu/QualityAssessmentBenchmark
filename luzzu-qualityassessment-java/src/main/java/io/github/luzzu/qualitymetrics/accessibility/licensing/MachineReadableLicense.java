@@ -17,9 +17,9 @@ import org.apache.jena.vocabulary.OWL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.github.luzzu.qualitymetrics.semantics.DQM;
-import io.github.luzzu.qualitymetrics.semantics.DQMPROB;
 import io.github.luzzu.qualitymetrics.utilities.AbstractQualityMetric;
+import io.github.luzzu.qualitymetrics.utilities.vocabularies.DQM;
+import io.github.luzzu.qualitymetrics.utilities.vocabularies.DQMPROB;
 import io.github.luzzu.qualityproblems.ProblemCollection;
 import io.github.luzzu.semantics.vocabularies.QPRO;
 

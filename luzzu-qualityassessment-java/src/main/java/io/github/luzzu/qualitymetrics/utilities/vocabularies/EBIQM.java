@@ -1,5 +1,5 @@
 /* CVS $Id: $ */
-package io.github.luzzu.qualitymetrics.semantics;
+package io.github.luzzu.qualitymetrics.utilities.vocabularies;
 
 import org.apache.jena.rdf.model.*;
 
