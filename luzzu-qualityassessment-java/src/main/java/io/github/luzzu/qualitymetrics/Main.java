@@ -45,25 +45,41 @@ public class Main {
 	}
 
 	public static void assessQualitySingle() throws MetricProcessingException {
+		long startMetricTime = 0;
+		startMetricTime = System.currentTimeMillis();
 		AbstractQualityMetric metric_HumanReadableLicense = new HumanReadableLicense();
 		assessQuality(metric_HumanReadableLicense);
+		System.out.println("metric_HumanReadableLicense: " + (System.currentTimeMillis() - startMetricTime) + "ms.");
+
+		startMetricTime = System.currentTimeMillis();
 		AbstractQualityMetric metric_MachineReadableLicense = new MachineReadableLicense();
 		assessQuality(metric_MachineReadableLicense);
+		System.out.println("metric_MachineReadableLicense: " + (System.currentTimeMillis() - startMetricTime) + "ms.");
 
+		startMetricTime = System.currentTimeMillis();
 		AbstractQualityMetric metric_LinkExternalDataProviders = new LinkExternalDataProviders();
 		assessQuality(metric_LinkExternalDataProviders);
+		System.out.println("metric_LinkExternalDataProviders: " + (System.currentTimeMillis() - startMetricTime) + "ms.");
 
+		startMetricTime = System.currentTimeMillis();
 		AbstractQualityMetric metric_HumanReadableLabelling = new HumanReadableLabelling();
 		assessQuality(metric_HumanReadableLabelling);
+		System.out.println("metric_HumanReadableLabelling: " + (System.currentTimeMillis() - startMetricTime) + "ms.");
 
+		startMetricTime = System.currentTimeMillis();
 		AbstractQualityMetric metric_ShortURIs = new ShortURIs();
 		assessQuality(metric_ShortURIs);
+		System.out.println("metric_ShortURIs: " + (System.currentTimeMillis() - startMetricTime) + "ms.");
 
+		startMetricTime = System.currentTimeMillis();
 		AbstractQualityMetric metric_CompatibleDatatype = new CompatibleDatatype();
 		assessQuality(metric_CompatibleDatatype);
+		System.out.println("metric_CompatibleDatatype: " + (System.currentTimeMillis() - startMetricTime) + "ms.");
 
+		startMetricTime = System.currentTimeMillis();
 		AbstractQualityMetric metric_ExtensionalConciseness = new ExtensionalConciseness();
 		assessQuality(metric_ExtensionalConciseness);
+		System.out.println("metric_ExtensionalConciseness: " + (System.currentTimeMillis() - startMetricTime) + "ms.");
 
 	}
 
